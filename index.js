@@ -16,6 +16,7 @@ const allowedOrigin = process.env.FRONTEND_URL;
 
 const origins = [
     allowedOrigin,
+    "https://sample-website-frontend.vercel.app",
     "http://localhost:5173" // Keep this for redundancy and clarity in local testing
 ];
 
