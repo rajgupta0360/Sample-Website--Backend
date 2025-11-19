@@ -12,11 +12,10 @@ dotenv.config();
 const app = express();
 
 const PORT = process.env.PORT || 5000;
-const allowedOrigin = process.env.FRONTEND_URL;
 
 const origins = [
-    allowedOrigin,
     "https://sample-website-frontend.vercel.app",
+    "https://sample-website-frontend.vercel.app/",
     "http://localhost:5173" // Keep this for redundancy and clarity in local testing
 ];
 
