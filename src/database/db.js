@@ -7,7 +7,7 @@ const url = process.env.DB_URL;
 const connectDB = async () => {
     try {
         const conn =await mongoose.connect(`${url}/flipr_db`);
-        console.log("Database connected successfully", conn.connection.host);
+        console.log("Database connected successfully");
     } catch (error) {
         console.log("Error connecting to database:", error);
     }

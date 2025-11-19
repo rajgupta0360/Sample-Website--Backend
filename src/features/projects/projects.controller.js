@@ -17,8 +17,7 @@ export const createProject = async (req, res) => {
         const { path, filename } = req.file;
         if (!title || !description) {
             return res.status(400).json({ message: "Title and description are required" });
-        } 
-        console.log("createProject checking what is indside req.file",req.file);
+        }
         const newProject = { title, description, image: filename, path: path };
         const project = new Project(newProject);
         await project.save();
