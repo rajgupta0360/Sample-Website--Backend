@@ -48,7 +48,7 @@ export const logIn = async(req, res) => {
 
         res.status(200).json({ message: "Login successful", admin });
     }
-    catch {
+    catch(error) {
         console.log("Error in admin login:", error);
         res.status(500).json({ message: "Internal server error" });
     }
